@@ -1,12 +1,14 @@
 import React from "react";
 import AboutSection from "../components/AboutSection";
-import BenefitSection from "../components/BenefitsSection";
+import BenefitsSection from "../components/BenefitsSection";
+import FaqSection from "../components/FaqSection";
 
 const AboutUs = () => {
   return (
     <>
       <AboutSection />
-      <BenefitSection />
+      <BenefitsSection />
+      <FaqSection />
     </>
   );
 };
