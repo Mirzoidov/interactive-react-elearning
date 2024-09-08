@@ -8,6 +8,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
+        font-family: 'SF Pro Display', sans-serif;                                        
         background: #2a2e35;
     }
 
@@ -17,11 +18,11 @@ const GlobalStyles = createGlobalStyle`
         cursor: pointer;
         background-color: transparent;
         padding: 1rem 2rem;
-        border: 3px solid #ffe45c;
+        border: 3px solid #30bee1;
         color: #fff;
         transition: all 0.25s linear;
         &:hover {
-            background-color: #ffe45c;
+            background-color: #30bee1;
             color: #2a2e35;
         }
     }
@@ -40,7 +41,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     span {
-        color: #ffe45c;
+        color: #30bee1;
         font-weight: bold;
     }
 
@@ -54,5 +55,5 @@ const GlobalStyles = createGlobalStyle`
         font-size: 1.4rem;
         line-height: 150%;
     }
-` 
+`;
 export default GlobalStyles;
