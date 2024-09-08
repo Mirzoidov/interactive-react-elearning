@@ -4,7 +4,7 @@ import homeIntro from "../img/home_intro.jpg"
 
 const AboutSection = () => {
   return (
-    <section>
+    <div>
       <div className="description">
         <div className="title">
           <div className="hide">
@@ -26,7 +26,7 @@ const AboutSection = () => {
       <div className="image">
         <img src={homeIntro} alt="man reading book" />
       </div>
-    </section>
+    </div>
   );
 };
 
