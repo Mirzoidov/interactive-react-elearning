@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom/cjs/react-router-dom";
 import { CourseState } from "../courseState";
+// Animation
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
 
 const CourseDetail = () => {
   const history = useHistory();
@@ -20,7 +23,7 @@ const CourseDetail = () => {
   return (
     <>
       {course && (
-        <Details>
+        <Details variants={pageAnimation} initial="hidden" animate="show" exit="exit">
           <Header>
             <h2>{course.title}</h2>
             <img src={course.mainImg} alt={course.title} />
@@ -43,7 +46,7 @@ const CourseDetail = () => {
   );
 };
 
-const Details = styled.div`
+const Details = styled(motion.div)`
   color: #fff;
 `;
 
